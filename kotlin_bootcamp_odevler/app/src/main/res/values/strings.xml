@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">kotlin_bootcamp_odevler</string>
+    <string name="uygulama_adi">AutoFinder</string>
+
+    <string name="baslik_yazisi">AutoFinder</string>
+    <string name="araba_adi">Mercedes AMG GT</string>
+
+    <string name="motor_butonu">Motor</string>
+    <string name="yakit_butonu">Yakıt</string>
+    <string name="hiz_butonu">Hız</string>
+    <string name="garanti_butonu">Garanti</string>
+
+    <string name="sure_yazisi">15 dk</string>
+    <string name="uygunluk_yazisi">Test Sürüşüne Hazır</string>
+
+    <string name="slogan_yazisi">Performans tutkunları için üstün güç ve lüks bir arada!</string>
+    <string name="fiyat_yazisi">₺4.750.000</string>
+    <string name="buton_yazisi">RANDEVU AL</string>
+
+    <string name="araba_resim_aciklamasi">Araba Resmi</string>
 </resources>

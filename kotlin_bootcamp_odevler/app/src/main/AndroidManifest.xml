@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Kotlin_bootcamp_odevler"
         tools:targetApi="31">
         <activity
-            android:name=".kotlin_bootcamp_odevler.MainActivity"
+            android:name=".kotlin_bootcamp_odevler.odev3.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
