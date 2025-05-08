@@ -1,5 +1,9 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">AutoFinder</string>
+=======
+    <string name="uygulama_adi">AutoFinder</string>
+>>>>>>> 360a53e1d443a43c79138c83d5a1086ef3d92091
 
     <string name="baslik_yazisi">AutoFinder</string>
     <string name="araba_adi">Mercedes AMG GT</string>

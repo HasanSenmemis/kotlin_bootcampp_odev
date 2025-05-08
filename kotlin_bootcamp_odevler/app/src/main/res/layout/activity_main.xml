@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".kotlin_bootcamp_odevler.MainActivity">
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
 
+<<<<<<< HEAD
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
@@ -17,5 +19,203 @@
         app:layout_constraintTop_toTopOf="parent"
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph" />
+=======
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C41E3A"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/statusBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/baslik_yazisi"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Car Name -->
+            <TextView
+                android:id="@+id/carName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/araba_adi"
+                android:textColor="#C41E3A"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Car Image -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carImageCard"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="140dp"
+                app:cardElevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/carName">
+
+                <ImageView
+                    android:id="@+id/carImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/araba_resim_aciklamasi"
+                    android:src="@drawable/araba" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Feature Buttons -->
+            <LinearLayout
+                android:id="@+id/featureButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                app:layout_constraintTop_toBottomOf="@id/carImageCard">
+
+                <Button
+                    android:id="@+id/motorButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C41E3A"
+                    android:text="@string/motor_butonu"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/fuelButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C41E3A"
+                    android:text="@string/yakit_butonu"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/speedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C41E3A"
+                    android:text="@string/hiz_butonu"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/warrantyButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C41E3A"
+                    android:text="@string/garanti_butonu"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Timing -->
+            <TextView
+                android:id="@+id/timing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/sure_yazisi"
+                android:textColor="#333333"
+                android:textSize="40sp"
+                app:layout_constraintTop_toBottomOf="@id/featureButtons" />
+
+            <!-- Availability -->
+            <TextView
+                android:id="@+id/availability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/uygunluk_yazisi"
+                android:textColor="#C41E3A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/timing" />
+
+            <!-- Tagline -->
+            <TextView
+                android:id="@+id/tagline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/slogan_yazisi"
+                android:textColor="#666666"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/availability" />
+
+            <!-- Price and Action Button -->
+            <LinearLayout
+                android:id="@+id/priceActionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/tagline">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/fiyat_yazisi"
+                    android:textColor="#C41E3A"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/actionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#C41E3A"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:text="@string/buton_yazisi"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                app:layout_constraintTop_toBottomOf="@id/priceActionLayout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+>>>>>>> 360a53e1d443a43c79138c83d5a1086ef3d92091
 
 </androidx.constraintlayout.widget.ConstraintLayout>

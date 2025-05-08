@@ -1,6 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Kotlin_bootcamp_odevler" parent="Theme.Material3.DayNight.NoActionBar">
+<<<<<<< HEAD
         <item name="colorPrimary">@color/my_dark_primary</item>
+=======
+        <item name="colorPrimary">@color/my_dark_primar</item> -->
+>>>>>>> 360a53e1d443a43c79138c83d5a1086ef3d92091
     </style>
 </resources>

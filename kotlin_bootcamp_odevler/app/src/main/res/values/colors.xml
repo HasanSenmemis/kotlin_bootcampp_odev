@@ -6,5 +6,8 @@
     <color name="anaRenk">#CB2020</color>
     <color name="yaziRenk1">#FFFFFF</color>
     <color name="yaziRenk2">#636363</color>
+<<<<<<< HEAD
     <color name="my_dark_primary">#9C1C1C</color>
+=======
+>>>>>>> 360a53e1d443a43c79138c83d5a1086ef3d92091
 </resources>
